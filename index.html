@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script src="./qcm-package/script.js"></script>
+    <script>
+        const qcm = new QCM('./qcm-package/style.css', {
+            "Que veut dire 0100 ?": [
+                "4:good",
+                "2:bad",
+                "1:bad",
+                "8:bad"
+            ],
+
+            "Que veut dire 1010 ?": [
+                "8:bad",
+                "12:bad",
+                "10:good",
+                "2:bad"
+            ],
+
+            "Que veut dire 10001 ?": [
+                "8:bad",
+                "15:bad",
+                "11:bad",
+                "17:good"
+            ],
+
+            "Que fait 101 + 010 ?": [
+                "111:good",
+                "101010:bad",
+                "000101:bad",
+                "010101:bad"
+            ],
+
+            "Quel est le resultat de 010 + 100 ?": [
+                "10:bad",
+                "2:bad",
+                "6:good",
+                "5:bad"
+            ],
+
+            "Quel est le resultat de 100 + 100 ?": [
+                "8:good",
+                "4:bad",
+                "2:bad",
+                "1:bad"
+            ]
+        });
+    </script>
+</body>
+</html>

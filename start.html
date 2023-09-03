@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QCM Code</title>
+</head>
+<body>
+
+    <h2>Quiz sur le code</h2>
+
+    <div id="btn">
+        <span>Let's go</span>
+    </div>
+
+    <script>
+        let btn = document.getElementById("btn");
+        let title = document.querySelector("h2");
+
+        btn.addEventListener('click', () => {
+            window.location = "index.html"
+        })
+    </script>
+
+    <style>
+        div {
+            background: hsl(216, 100%, 32%);
+            border-radius: 12px;
+            border: none;
+            padding: 0;
+            cursor: pointer;
+            outline-offset: 4px;
+            text-align: center;
+            width: 25%;
+            margin: auto;
+            user-select: none;
+        }
+
+
+        div span {
+            display: block;
+            padding: 12px 42px;
+            border-radius: 12px;
+            font-size: 1.25rem;
+            background: hsl(216, 100%, 47%);
+            transform: translateY(-6px);
+            color: rgb(220, 220, 220);
+            font-family: sans-serif;
+            font-weight: bold;
+        }
+
+        div:active span {
+            transform: translateY(-2px);
+        }
+
+        h2 {
+            transition: all 0.1s;
+            display: block;
+            padding: 12px 42px;
+            border-radius: 12px;
+            font-size: 1.25rem;
+            background: rgb(255, 255, 255);
+            color: rgb(220, 220, 220);
+            transform: translateY(-6px);
+            font-weight: bold;
+            font-family: sans-serif;
+            text-align: center;
+            user-select: none;
+        }
+    </style>
+    
+</body>
+</html>
